@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head><title>ATS files</title>
+<style>
+	body{background-color:rgba(204,0,0,1);
+		color:rgba(255,255,255,1);
+	}
+	
+	
+	#login{ 
+		background-color:rgba(255,102,0,1); 
+		border-radius:10px; 
+		padding:5px; 
+		border-color:rgba(255,255,255,1); 
+		border-width:thin; 
+		border-style:solid;
+		position:absolute;
+		top:400px;
+		left:100px;
+		}
+		
+	#ATSinfo_Secret{visibility:hidden;}
+	#submit{width:70px; height:30px; background-color:rgba(255,0,0,1); border-radius:5px; cursor:pointer;}
+	#submit:hover{background-color:rgba(255,51,51,0.6);}
+	
+	.LogoutButt{background-color:rgba(255,0,0,1); border-radius:5px; line-height:50px; font-size:20px; cursor:pointer;}
+	.LogoutButt:hover{background-color:rgba(255,51,0,1);}
+	
+	input{ padding:8px; font-size:14px}
+	
+	
+	
+	/*colour animation*/
+	
+	.color-background {
+	
+	position:relative;
+	top: 0;
+	margin: 0 auto;
+	padding: 0;
+	height: 150%;
+	width: 400px;
+	box-shadow:3px 4px 2px rgba(0,0,0,0.6);
+	animation: colorBackground 20s infinite; /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
+	 -webkit-animation: colorBackground 20s infinite; /* Chrome, Safari 5+ */
+	  -moz-animation: colorBackground 20s infinite; /* Firefox 5-15 */
+	    -o-animation: colorBackground 20s infinite; /* Opera 12.00 */
+		
+		border-top-left-radius:20px;
+		border-bottom-right-radius:20px;
+		
+		
+}
+
+@keyframes colorBackground {
+	  0% { background-color: #fbcf61; }
+	 20% { background-color: #6bd57e; }
+	 40% { background-color: #ff6f6f; }
+	 60% { background-color: #57cff4; }
+	 80% { background-color: #0ed4c8; }
+	100% { background-color: #fbcf61; }
+}
+@-webkit-keyframes colorBackground {
+	  0% { background-color: #fbcf61; }
+	 20% { background-color: #6bd57e; }
+	 40% { background-color: #ff6f6f; }
+	 60% { background-color: #57cff4; }
+	 80% { background-color: #0ed4c8; }
+	100% { background-color: #fbcf61; }
+}
+@-moz-keyframes colorBackground {
+	  0% { background-color: #fbcf61; }
+	 20% { background-color: #6bd57e; }
+	 40% { background-color: #ff6f6f; }
+	 60% { background-color: #57cff4; }
+	 80% { background-color: #0ed4c8; }
+	100% { background-color: #fbcf61; }
+}
+@-o-keyframes colorBackground {
+	  0% { background-color: #fbcf61; }
+	 20% { background-color: #6bd57e; }
+	 40% { background-color: #ff6f6f; }
+	 60% { background-color: #57cff4; }
+	 80% { background-color: #0ed4c8; }
+	100% { background-color: #fbcf61; }
+}
+
+.color-me {
+	position: relative;
+	top: 35%;
+	background-color: #fff;
+	padding: 20px;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.color-background .color-me p {
+	padding: 0; 
+	margin: 0 0 -15px 0;
+	color: #777;
+	letter-spacing: 5px;
+	font-size: 4px;
+	text-transform: uppercase;
+}
+
+
+
+</style>
+
+<script language="javascript">
+	function LoginFunction()
+	{
+		if(pwd.value=="welcome")
+		{
+			document.getElementById("ATSinfo_Secret").style.visibility="visible";
+			document.getElementById("login").style.visibility="hidden";
+		}
+		else
+		{
+			alert("I think you are trying to access my site illegally");	
+			document.getElementById("pwd").value="";
+			document.getElementById("pwd").focus();
+		}
+	}
+	
+	function LogoutFunction()
+	{
+			document.getElementById("ATSinfo_Secret").style.visibility="hidden";
+			document.getElementById("login").style.visibility="visible";
+			document.getElementById("pwd").value="";
+			document.getElementById("pwd").focus();
+	}
+</script>
+
+<body alink="#FFFFFF" vlink="#FFFFFF" link="#FFFFFF">
+<center>
+<div class="color-background">
+
+
+
+<font size="10">ATS</font><hr width="100px" color="#FFFFFF">
+<font size="2">achoo the smart</font>
+<br>
+<br>
+<font size="1">Files of Prasanna Ashok</font>
+
+	<table border="0" id="login">
+    <!--<tr><td>Username:</td><td> <input type="text" placeholder="Username" id="uname"> </td></tr>-->
+    <tr><td></td><td> <input type="password" placeholder="Password" id="pwd" align="middle" style="text-align:center;"></td></tr>
+    <tr><td colspan="2" align="center"><div id="submit" onClick="LoginFunction()" title="Login service provided to access personal details only">Login</div></td>
+    </table>
+
+		<table border="0" style="background-color:rgba(255,51,0,1);">
+        <tr><td>Name:</td> <td>Prasanna Ashok . V</td></tr>
+        <tr><td>DOB:</td> <td>26, September, 1989</td></tr>
+        <tr><td>Passport size image:</td><td> <a href="ATSPassport.jpg" target="_blank" title="Click to download image"><img src="avatar.gif" width="50px" alt="image of ATS"></a></td></tr>
+		<tr><td>Resume: </td> <td><a target="_blank" href="PrasannaAshok_Resume.pdf" title="Click here to view Resume in PDF format"><img src="PDF.gif" height="50" alt="PDF Format"/></a>
+			        <a target="_blank" href="PrasannaAshok_Resume.docx" title="Click here to view Resume in MS-WORD format"><img src="Word.gif" alt="MS-Word Format" height="50"/></a><br></td></tr>
+        <tr><td>Blood Group:</td> <td title="I've donated my blood twice :)">O +ve</td></tr>
+        <tr><td>Mobile:</td> <td title="Service Provider: Bharthi Airtel India">+919788066150</td></tr>
+        <tr><td>Email:</td> <td><a href="mailto:PrasannaAshok@outlook.com" title="My professional mail id">PrasannaAshok@outlook.com</a></td></tr>
+        </table>
+        
+	<div id="ATSinfo_Secret">
+    	
+	    Welcome Sir! Information About you
+
+        <table border="0" style="background-color:rgba(255,102,0,1);">
+        <tr><td>PAN:</td> <td>CBUPP9212Q</td></tr>
+        <tr><td>Election ID:</td> <td>CDV4720207</td></tr>
+        
+        </table>
+        
+        <p align="center"><div id="LogoutBut" class="LogoutButt" onClick="LogoutFunction()" style="width:200px; height:50px;" align="center">Logout</div></p>
+		<br>
+
+
+    </div>
+  </div>
+  <font size="2">a website by CLOUD WRITERS</font><br>
+  <img src="CW_logo_white.gif" alt="CW_logo" width="160"/>
+</center>
+
+</body>
+</html>
